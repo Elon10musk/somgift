@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #audioPlayer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <audio id="backgroundMusic">
+        <source src="https://pagalsong.in/uploads/systemuploads/mp3/Race/Pehli Nazar Mein - Race 128 Kbps.mp3" type="audio/mpeg">
+        <source src="path/to/your/audiofile.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        window.addEventListener('load', function() {
+            var audioPlayer = document.getElementById('backgroundMusic');
+            audioPlayer.volume = 0.5;
+            audioPlayer.play();
+        });
+    </script>
+</body>
+</html>
